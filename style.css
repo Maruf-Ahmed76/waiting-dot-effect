@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.effect{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	margin-top: 20%;
+}
+.effect span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: gray;
+}
+.effect span:nth-child(odd){
+	animation: typingOdd 0.4s ease infinite alternate;
+}
+.effect span:nth-child(2n){
+	animation: typing 0.4s ease infinite alternate;
+}
+@keyframes typingOdd{
+	from{
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	to{
+		opacity: .20;
+		transform: scale(.75);
+	}
+}
+@keyframes typing{
+	from{
+		opacity: .20;
+		transform: scale(.75);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1.2);
+	}
+}
