@@ -21,7 +21,7 @@
 	animation: typingOdd 0.4s ease infinite alternate;
 }
 .effect span:nth-child(2n){
-	animation: typing 0.4s ease infinite alternate;
+	animation: typing 0.4s ease infinite alternate; 
 }
 @keyframes typingOdd{
 	from{
